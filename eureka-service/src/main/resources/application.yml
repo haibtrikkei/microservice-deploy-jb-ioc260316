@@ -1,0 +1,14 @@
+spring:
+    application:
+        name: eureka-service
+server:
+    port: 8761
+eureka:
+    client:
+        fetch-registry: false
+        register-with-eureka: false
+    server:
+        peer-node-read-timeout-ms: 10000
+    instance:
+        hostname: 221.121.0.75
+        prefer-ip-address: true

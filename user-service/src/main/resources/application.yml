@@ -1,0 +1,16 @@
+spring:
+    application:
+        name: user-service
+    config:
+        import: optional:configserver:${CONFIG_SERVER_URL:http://localhost:8888}
+
+    cache:
+        redis:
+          time-to-live: 10m
+        type: redis
+
+    data:
+      redis:
+          host: ${REDIS_HOST:localhost}
+          port: ${REDIS_PORT:6379}
+
